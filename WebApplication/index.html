@@ -1,4 +1,155 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title> Super Resolution </title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/split.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+
+<body data-spy="scroll" data-target="header">
+
+
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
+
+    <!--header start here -->
+
+    <header class="header navbar fixed-top navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <span>Super Resolution</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="lnr lnr-text-align-right"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+                <ul class=" nav navbar-nav menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#about">How it Works?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#services">How to Use?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--header end here-->
+    <!--cover section slider -->
+    <section id="home" class="home bg-light">
+        <ul class="hero_carousel owl-carousel owl-theme">
+            <li class="vh100" style="background: url('assets/img/bg/b1.jpg');">
+                <div class="slider_content">
+                    <div class="slider-content-inner">
+                        <div class="container">
+                            <div class="slider-content-center">
+                                <h2>Enhance Your Image</h2>
+                                <div class="title_divider"></div>
+                                <p>Upscale your image with using State-of-the-Art Deep Learning Algorithm.</p>
+                                <a href="#" class=" btn btn-rounded btn-primary ">
+                                    <label for="inputFile">Upload Image</label>
+                                    <input type="file" class="inputFile" id="inputFile" style="display:none" name="Upload Image" onclick="loadimg()">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--cover section slider end -->
+    <div id="loadimghere">
+
+    </div>
+    <!--about section -->
+    <section id="about" class="bg-light pt120 pb120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-md-4 col-lg-4">
+                    <div class="icon_box_one text-center fadeInLeft wow animated" data-wow-delay="100ms">
+                        <i class=" icon-tools icon-lg color-green"></i>
+                        <h5>
+                            Upload Image
+                        </h5>
+                        <p>
+                            Upload the image that you want to enhance. It can be any image with any resolution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=" col-md-4 col-lg-4 col-12">
+                    <div class="icon_box_one text-center fadeInLeft wow animated" data-wow-delay="100ms">
+                        <i class="  icon-speedometer icon-lg color-blue"></i>
+                        <h5>
+                            Proccessing
+                        </h5>
+                        <p>
+                            By using Deep Learning model trained on 10,000+ images using Generator and Discriminator will enhnace your image.
+                        </p>
+                    </div>
+                </div>
+
+                <div class=" col-md-4 col-lg-4 col-12">
+                    <div class="icon_box_one text-center fadeInLeft wow animated" data-wow-delay="100ms">
+                        <i class="icon-search icon-lg color-red"></i>
+                        <h5>
+                            Your Enhanced Image
+                        </h5>
+                        <p>
+                            You get the enhnaced Image. Look Closley the deatils are BACK.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_four footer_dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-12 text-center-xs">
+                    <p>
+                        Thank You.
+                    </p>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </footer>
+
+
+    <!-- jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- plugins js -->
+    <script src="assets/plugins.js"></script>
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!--<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,7 +159,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Super Resolution</title>
     <link href="style.css" rel="stylesheet">
-    <script type="text/javascript" src="/eel.js"></script>    
+    <script type="text/javascript" src="/eel.js"></script>
 </head>
 
 <body>
@@ -18,10 +169,10 @@
         <img src="" alt="Image Preview" id="image-preview_image" class="image-preview_image">
         <span class="image-preview_default-text">Image Preview</span>
     </div>
-    <button onclick = "performFunction()"> 
-        Press me! 
+    <button onclick = "performFunction()">
+        Press me!
     </button>
 
 <script type="text/javascript" src="main.js"></script>
 </body>
-</html>
+</html>-->

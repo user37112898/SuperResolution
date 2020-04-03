@@ -35,6 +35,12 @@ function performFunction() {
 	eel.superFunction(imageObject,fileName)(setImage);
 }
 
+function loadimg() {
+    var a = '<div class="image-preview" id="imagePreview">' + '<img src="" alt="Image Preview" id="image-preview_image" class="image-preview_image">'+
+        '<span class="image-preview_default-text">Image Preview</span>' + '</div>' + '<button onclick = "performFunction()"> Press me! </button>';
+    document.getElementById("loadimghere").innerHTML = a;
+}
+
 function setImage(base64) {
 	previewImage.setAttribute('src',base64);
 }

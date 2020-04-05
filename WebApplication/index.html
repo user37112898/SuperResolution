@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title> Super Resolution </title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    <link rel="stylesheet" href="assets/css/split.css">
-    <script type="text/javascript" src="/eel.js"></script>
-    <link href="assets/css/main.css" rel="stylesheet">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title> Super Resolution </title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/split.css">
+        <script type="text/javascript" src="/eel.js"></script>
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
 </head>
 
 
@@ -58,10 +58,8 @@
                                 <h2>Enhance Your Image</h2>
                                 <div class="title_divider"></div>
                                 <p>Upscale your image with using State-of-the-Art Deep Learning Algorithm.</p>
-                                <a href="#" class=" btn btn-rounded btn-primary ">
-                                    <label for="inputFile">Upload Image</label>
-                                    <input type="file" class="inputFile" id="inputFile" style="display:none" name="Upload Image" onclick="loadimg()">
-                                </a>
+                                    <button class="btn btn-rounded btn-primary" onclick="openFileFunction()">Upload</button>
+                                    <input type="file" class="inputFile" id="inputFile" style="display:none">
                             </div>
                         </div>
                     </div>
@@ -70,8 +68,14 @@
         </ul>
     </section>
     <!--cover section slider end -->
-    <div id="loadimghere">
-
+    <div id="imageSection">
+        <div class="image-preview" id="imagePreview">
+            <img src="" alt="Image Preview" id="image-preview_image" class="image-preview_image">
+            <!-- <span class="image-preview_default-text">Image Preview</span> -->
+        </div>
+        <button class="btn btn-rounded btn-secondary"  onclick = "performFunction()">
+            Press me!
+        </button>
     </div>
     <!--about section -->
     <section id="about" class="bg-light pt120 pb120">

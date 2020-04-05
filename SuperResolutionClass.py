@@ -12,7 +12,7 @@ class SuperResolution:
     def __init__(self):
         self.gan_generator = generator()
         self.CWD_PATH = os.getcwd()
-        self.gan_generator.load_weights(os.path.join(self.CWD_PATH,'weights','srgan','gan_generator.h5'))
+        self.gan_generator.load_weights(os.path.join(self.CWD_PATH,'weights','gan_generator.h5'))
     
     def resolve_and_plot(self,lr,fileName):
         gan_sr = resolve_single(self.gan_generator, lr)
